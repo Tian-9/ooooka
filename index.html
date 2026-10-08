@@ -16,7 +16,7 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <script src="https://unpkg.com/dexie/dist/dexie.js" defer></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js" defer></script>
-  <script src="https://phoebeboo.github.io/mewoooo/pp.js" defer></script>
+  <script src="vendor/pp.js" defer></script>
   <script src="https://cdn.jsdelivr.net/npm/streamsaver@2.0.6/StreamSaver.min.js" defer></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js" defer></script>
   <script src="https://cdn.jsdelivr.net/npm/browser-image-compression@2.0.2/dist/browser-image-compression.js"></script>
@@ -87,7 +87,7 @@
         <div id="home-screen-pages">
           <div class="home-screen-page">
             <div id="main-content-area">
-              <div id="profile-widget"> <img id="profile-banner-img" src="https://i.imgur.com/1n3a43H.jpeg" class="editable-image">
+              <div id="profile-widget"> <img id="profile-banner-img" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2MDAgMzAwIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJ4TWlkWU1pZCBzbGljZSI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJnIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjZmZkNmU4Ii8+PHN0b3Agb2Zmc2V0PSIuNSIgc3RvcC1jb2xvcj0iI2UyZDRmZiIvPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iI2NkZThmZiIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHdpZHRoPSI2MDAiIGhlaWdodD0iMzAwIiBmaWxsPSJ1cmwoI2cpIi8+PGNpcmNsZSBjeD0iNDgwIiBjeT0iNzAiIHI9IjkwIiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIuMzUiLz48Y2lyY2xlIGN4PSIxMTAiIGN5PSIyNTAiIHI9IjEyMCIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iLjI1Ii8+PGcgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iLjkiPjxwYXRoIGQ9Ik0zMDAgMTEwbDYgMTYgMTYgNi0xNiA2LTYgMTYtNi0xNi0xNi02IDE2LTZ6Ii8+PHBhdGggZD0iTTIwMCA3MGwzIDggOCAzLTggMy0zIDgtMy04LTgtMyA4LTN6Ii8+PHBhdGggZD0iTTQwMCAxOTBsNCAxMCAxMCA0LTEwIDQtNCAxMC00LTEwLTEwLTQgMTAtNHoiLz48L2c+PC9zdmc+Cg==" class="editable-image">
                 <div class="profile-avatar-container"> <img id="profile-avatar-img" src="https://i.postimg.cc/y8xWzCqj/anime-boy.jpg" class="editable-image"> </div>
                 <div class="profile-info">
                   <p id="profile-username" class="editable-text">@ insonneve 🪦</p>
@@ -103,7 +103,7 @@
                   <div class="desktop-widget text-only">
                     <p id="widget-text-1" class="editable-text">Be fearless in pursuit of happiness</p>
                   </div>
-                  <div class="desktop-widget icon-left"> <img id="widget-avatar-1" src="https://i.imgur.com/1n3a43H.jpeg" class="editable-image"> <span id="widget-text-2" class="editable-text">Dare to be different</span> </div>
+                  <div class="desktop-widget icon-left"> <img id="widget-avatar-1" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2MDAgMzAwIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJ4TWlkWU1pZCBzbGljZSI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJnIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjZmZkNmU4Ii8+PHN0b3Agb2Zmc2V0PSIuNSIgc3RvcC1jb2xvcj0iI2UyZDRmZiIvPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iI2NkZThmZiIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHdpZHRoPSI2MDAiIGhlaWdodD0iMzAwIiBmaWxsPSJ1cmwoI2cpIi8+PGNpcmNsZSBjeD0iNDgwIiBjeT0iNzAiIHI9IjkwIiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIuMzUiLz48Y2lyY2xlIGN4PSIxMTAiIGN5PSIyNTAiIHI9IjEyMCIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iLjI1Ii8+PGcgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iLjkiPjxwYXRoIGQ9Ik0zMDAgMTEwbDYgMTYgMTYgNi0xNiA2LTYgMTYtNi0xNi0xNi02IDE2LTZ6Ii8+PHBhdGggZD0iTTIwMCA3MGwzIDggOCAzLTggMy0zIDgtMy04LTgtMyA4LTN6Ii8+PHBhdGggZD0iTTQwMCAxOTBsNCAxMCAxMCA0LTEwIDQtNCAxMC00LTEwLTEwLTQgMTAtNHoiLz48L2c+PC9zdmc+Cg==" class="editable-image"> <span id="widget-text-2" class="editable-text">Dare to be different</span> </div>
                   <div class="desktop-widget icon-right"> <span id="widget-text-3" class="editable-text">* Keep your spirit free</span> <img id="widget-avatar-2" src="https://i.imgur.com/5A0tE9a.jpeg" class="editable-image"> </div>
                 </div>
                 <div id="desktop-app-container">
@@ -232,10 +232,10 @@
           <div class="icon-bg-desktop"><img id="icon-img-font" src="https://i.postimg.cc/pXxk1JXk/IMG-6442.jpg" alt="字体"></div> <span class="label"data-lang-key="homeAppFont">字体</span>
         </div>
         <div class="desktop-app-icon" onclick="openCharacterSelector()">
-          <div class="icon-bg-desktop"><img id="icon-img-char-phone" src="https://i.postimg.cc/pXj9h20L/IMG-7275.jpg" alt="Cphone"></div> <span class="label"data-lang-key="homeAppCPhone">Cphone</span>
+          <div class="icon-bg-desktop"><img id="icon-img-char-phone" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjAgMTIwIj48ZGVmcz48bGluZWFyR3JhZGllbnQgaWQ9ImciIHgxPSIwIiB5MT0iMCIgeDI9IjEiIHkyPSIxIj48c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiNjOWI4ZmYiLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiNmZmI4ZDkiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB3aWR0aD0iMTIwIiBoZWlnaHQ9IjEyMCIgZmlsbD0idXJsKCNnKSIvPjxyZWN0IHg9IjQwIiB5PSIyNCIgd2lkdGg9IjQwIiBoZWlnaHQ9IjcyIiByeD0iOSIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjZmZmIiBzdHJva2Utd2lkdGg9IjUiLz48cmVjdCB4PSI1MyIgeT0iMzEiIHdpZHRoPSIxNCIgaGVpZ2h0PSIzIiByeD0iMS41IiBmaWxsPSIjZmZmIi8+PHBhdGggZD0iTTYwIDc4Yy01LTMuNi05LTYuNC05LTEwLjJhNC42IDQuNiAwIDAgMSA5LTEuNCA0LjYgNC42IDAgMCAxIDkgMS40YzAgMy44LTQgNi42LTkgMTAuMnoiIGZpbGw9IiNmZmYiLz48L3N2Zz4K" alt="Cphone"></div> <span class="label"data-lang-key="homeAppCPhone">Cphone</span>
         </div>
         <div class="desktop-app-icon" onclick="showScreen('douban-screen')">
-          <div class="icon-bg-desktop"><img id="icon-img-douban" src="https://i.postimg.cc/Pq2xJN1g/IMG-7301.jpg" alt="豆瓣"></div> <span class="label"data-lang-key="homeAppDouban">豆瓣</span>
+          <div class="icon-bg-desktop"><img id="icon-img-douban" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjAgMTIwIj48ZGVmcz48bGluZWFyR3JhZGllbnQgaWQ9ImciIHgxPSIwIiB5MT0iMCIgeDI9IjEiIHkyPSIxIj48c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiM5YmUzYjAiLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiMzZmFlNmEiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB3aWR0aD0iMTIwIiBoZWlnaHQ9IjEyMCIgZmlsbD0idXJsKCNnKSIvPjxyZWN0IHg9IjI4IiB5PSIzMCIgd2lkdGg9IjY0IiBoZWlnaHQ9IjQ0IiByeD0iMTIiIGZpbGw9IiNmZmYiLz48cGF0aCBkPSJNNDQgNzJsLTYgMTYgMjAtMTR6IiBmaWxsPSIjZmZmIi8+PGNpcmNsZSBjeD0iNDYiIGN5PSI1MiIgcj0iNSIgZmlsbD0iIzNmYWU2YSIvPjxjaXJjbGUgY3g9IjYwIiBjeT0iNTIiIHI9IjUiIGZpbGw9IiMzZmFlNmEiLz48Y2lyY2xlIGN4PSI3NCIgY3k9IjUyIiByPSI1IiBmaWxsPSIjM2ZhZTZhIi8+PC9zdmc+Cg==" alt="豆瓣"></div> <span class="label"data-lang-key="homeAppDouban">豆瓣</span>
         </div>
       </div>
     </div>
